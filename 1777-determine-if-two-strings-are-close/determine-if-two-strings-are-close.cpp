@@ -10,20 +10,6 @@ public:
             return false;
 
         for(int i=0; i<num1; i++){
-            char ch= word1[i];
-            if(word1[i]>='A' && word1[i]<='Z'){
-                word1[i]= ch-'A' + 'a';
-            }
-        }
-
-        for(int i=0; i<num2; i++){
-            char ch= word2[i];
-            if(word2[i]>='A' && word2[i]<='Z'){
-                word2[i]= ch-'A' + 'a';
-            }
-        }
-
-        for(int i=0; i<num1; i++){
             freq1[word1[i] -'a']++;
         }
 

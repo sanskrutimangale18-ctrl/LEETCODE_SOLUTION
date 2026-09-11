@@ -7,14 +7,11 @@ public:
         if(word1.size() != word2.size())
             return false;
 
-        int num1=word1.size();
-        int num2=word2.size();
-
-        for(int i=0; i<num1; i++){
+        for(int i=0; i<word1.size(); i++){
             freq1[word1[i] -'a']++;
         }
 
-        for(int i=0; i<num2; i++){
+        for(int i=0; i<word2.size(); i++){
             freq2[word2[i] -'a']++;
         }
 

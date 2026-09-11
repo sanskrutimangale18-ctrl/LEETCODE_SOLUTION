@@ -3,11 +3,12 @@ public:
     bool closeStrings(string word1, string word2) {
         int freq1[26]={0};
         int freq2[26]={0};
+        
+        if(word1.size() != word2.size())
+            return false;
+
         int num1=word1.size();
         int num2=word2.size();
-
-        if(num1 != num2)
-            return false;
 
         for(int i=0; i<num1; i++){
             freq1[word1[i] -'a']++;

@@ -1,8 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> construct2DArray(vector<int>& original, int m, int n) {
-        int a=original.size();
-        if(a!= m*n){
+        if(original.size()!= m*n){
             return {};
         }
 
